@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: automatic merge
+    conditions:
+      - -draft
+      - check-success = ci
+    actions:
+      merge:
